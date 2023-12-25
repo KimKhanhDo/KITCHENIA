@@ -1000,6 +1000,6 @@ https://templatemo.com/tm-571-hexashop
 			});
 		});
 	</script>
-
+ <script type ="module" src="assets/js/checkout/hexa.js"></script> 
 </body>
 </html>
