@@ -49,12 +49,39 @@ https://templatemo.com/tm-571-hexashop
 
 	Product product1 = new Product();
 	product1.setId("CW1");
-	product1.setImgPath("images/cookware1.webp");
+	product1.setImage("assets/images/cookware1.webp");
 	product1.setCategory("cookware");
-	product1.setBrand("kitchenaid");
+	product1.setBrand("KITCHENAID");
 	product1.setName("10-Piece Hard Anodized Ceramic Nonstick Cookware Set");
-	product1.setPrice(22999);
+	product1.setPriceCents(22999);
 	list.add(product1);
+	
+	Product product2 = new Product();
+	product2.setId("CW2");
+	product2.setImage("assets/images/cookware2.webp");
+	product2.setCategory("cookware");
+	product2.setBrand("Ayesha Curry");
+	product2.setName("Stainless Steel 11-Piece Cookware Set");
+	product2.setPriceCents(14999);
+	list.add(product2);
+	
+	Product product3 = new Product();
+	product3.setId("CW3");
+	product3.setImage("assets/images/cookware3.webp");
+	product3.setCategory("cookware");
+	product3.setBrand("RACHAEL RAY");
+	product3.setName("Cucina 12-Piece Nonstick Cookware Set");
+	product3.setPriceCents(15999);
+	list.add(product3);
+	
+	Product product4 = new Product();
+	product4.setId("CW4");
+	product4.setImage("assets/images/cookware4.webp");
+	product4.setCategory("cookware");
+	product4.setBrand("ANOLON");
+	product4.setName("Cookware set");
+	product4.setPriceCents(29999);
+	list.add(product4);
 
 	pageContext.setAttribute("list", list);
 	%>
@@ -242,10 +269,12 @@ https://templatemo.com/tm-571-hexashop
 			</div>
 		</div>
 		<div class="container">
+		
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="men-item-carousel">
 						<div class="owl-men-item owl-carousel">
+							<c:forEach items="${list}" var="product" begin="0" end="3">
 							<div class="item">
 								<div class="thumb">
 									<div class="hover-content">
@@ -258,12 +287,12 @@ https://templatemo.com/tm-571-hexashop
 													class="fa fa-shopping-cart"></i></a></li>
 										</ul>
 									</div>
-									<img src="assets/images/cookware1.webp" alt="cookware">
+									<img src="${product.image}" alt="cookware">
 								</div>
 								<div class="down-content">
-									<h4>KITCHENAID</h4>
-									<span>10-Piece Hard Anodized Ceramic Nonstick Cookware
-										Set</span> <span>$229.99</span>
+							
+									<h4>${product.brand}</h4>
+									<span>${product.name}</span> <span>$${product.priceCents/100}</span>
 									<ul class="stars">
 										<li><i class="fa fa-star"></i></li>
 										<li><i class="fa fa-star"></i></li>
@@ -273,84 +302,8 @@ https://templatemo.com/tm-571-hexashop
 									</ul>
 								</div>
 							</div>
-							<div class="item">
-								<div class="thumb">
-									<div class="hover-content">
-										<ul>
-											<li><a href="single-product.html"><i
-													class="fa fa-eye"></i></a></li>
-											<li><a href="single-product.html"><i
-													class="fa fa-star"></i></a></li>
-											<li><a href="single-product.html"><i
-													class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-									<img src="assets/images/cookware2.webp" alt="cookware">
-								</div>
-								<div class="down-content">
-									<h4>AYESHA CURRY</h4>
-									<span>Stainless Steel 11-Piece Cookware Set</span> <span>$149.99</span>
-									<ul class="stars">
-										<li><i class="fa fa-star"></i></li>
-										<li><i class="fa fa-star"></i></li>
-										<li><i class="fa fa-star"></i></li>
-										<li><i class="fa fa-star"></i></li>
-										<li><i class="fa fa-star"></i></li>
-									</ul>
-								</div>
-							</div>
-							<div class="item">
-								<div class="thumb">
-									<div class="hover-content">
-										<ul>
-											<li><a href="single-product.html"><i
-													class="fa fa-eye"></i></a></li>
-											<li><a href="single-product.html"><i
-													class="fa fa-star"></i></a></li>
-											<li><a href="single-product.html"><i
-													class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-									<img src="assets/images/cookware3.webp" alt="cookware">
-								</div>
-								<div class="down-content">
-									<h4>RACHAEL RAY</h4>
-									<span>Cucina 12-Piece Nonstick Cookware Set</span> <span>$159.99</span>
-									<ul class="stars">
-										<li><i class="fa fa-star"></i></li>
-										<li><i class="fa fa-star"></i></li>
-										<li><i class="fa fa-star"></i></li>
-										<li><i class="fa fa-star"></i></li>
-										<li><i class="fa fa-star"></i></li>
-									</ul>
-								</div>
-							</div>
-							<div class="item">
-								<div class="thumb">
-									<div class="hover-content">
-										<ul>
-											<li><a href="single-product.html"><i
-													class="fa fa-eye"></i></a></li>
-											<li><a href="single-product.html"><i
-													class="fa fa-star"></i></a></li>
-											<li><a href="single-product.html"><i
-													class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-									<img src="assets/images/cookware4.webp" alt="">
-								</div>
-								<div class="down-content">
-									<h4>ANOLON</h4>
-									<span>Cookware Set</span> <span>$299.99</span>
-									<ul class="stars">
-										<li><i class="fa fa-star"></i></li>
-										<li><i class="fa fa-star"></i></li>
-										<li><i class="fa fa-star"></i></li>
-										<li><i class="fa fa-star"></i></li>
-										<li><i class="fa fa-star"></i></li>
-									</ul>
-								</div>
-							</div>
+							</c:forEach> 												
+							
 						</div>
 					</div>
 				</div>

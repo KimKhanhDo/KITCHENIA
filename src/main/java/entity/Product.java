@@ -3,11 +3,11 @@ package entity;
 public class Product {
 	
 	private String id;
-	private String imgPath;
+	private String image;
 	private String category;
 	private String brand;
 	private String name;
-	private double price;
+	private double priceCents;
 	
 	
 	public Product() {
@@ -15,14 +15,14 @@ public class Product {
 	}
 
 
-	public Product(String id, String imgPath, String category, String brand, String name, double price) {
+	public Product(String id, String image, String category, String brand, String name, double priceCents) {
 		super();
 		this.id = id;
-		this.imgPath = imgPath;
+		this.image = image;
 		this.category = category;
 		this.brand = brand;
 		this.name = name;
-		this.price = price;
+		this.priceCents = priceCents;
 	}
 
 
@@ -36,13 +36,13 @@ public class Product {
 	}
 
 
-	public String getImgPath() {
-		return imgPath;
+	public String getImage() {
+		return image;
 	}
 
 
-	public void setImgPath(String imgPath) {
-		this.imgPath = imgPath;
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 
@@ -76,13 +76,13 @@ public class Product {
 	}
 
 
-	public double getPrice() {
-		return price;
+	public double getPriceCents() {
+		return priceCents;
 	}
 
 
-	public void setPrice(double price) {
-		this.price = price;
+	public void setPriceCents(double priceCents) {
+		this.priceCents = priceCents;
 	}
 	
 	
