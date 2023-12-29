@@ -2,12 +2,14 @@ package entity;
 
 public class Product {
 	
-	private String id;
+	private int id;
+	private String name;
+	private String brand;
+	private double price;
 	private String image;
 	private String category;
-	private String brand;
-	private String name;
-	private double priceCents;
+	private int quantity;
+	private String description;
 	
 	
 	public Product() {
@@ -15,24 +17,57 @@ public class Product {
 	}
 
 
-	public Product(String id, String image, String category, String brand, String name, double priceCents) {
+	public Product(int id, String name, String brand, double price, String image, String category, int quantity,
+			String description) {
 		super();
 		this.id = id;
+		this.name = name;
+		this.brand = brand;
+		this.price = price;
 		this.image = image;
 		this.category = category;
-		this.brand = brand;
-		this.name = name;
-		this.priceCents = priceCents;
+		this.quantity = quantity;
+		this.description = description;
 	}
 
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public String getBrand() {
+		return brand;
+	}
+
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+
+	public double getPrice() {
+		return price;
+	}
+
+
+	public void setPriceCents(double price) {
+		this.price = price;
 	}
 
 
@@ -56,36 +91,24 @@ public class Product {
 	}
 
 
-	public String getBrand() {
-		return brand;
+	public int getQuantity() {
+		return quantity;
 	}
 
 
-	public void setBrand(String brand) {
-		this.brand = brand;
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 
 
-	public String getName() {
-		return name;
+	public String getDescription() {
+		return description;
 	}
 
 
-	public void setName(String name) {
-		this.name = name;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
-
-	public double getPriceCents() {
-		return priceCents;
-	}
-
-
-	public void setPriceCents(double priceCents) {
-		this.priceCents = priceCents;
-	}
-	
-	
-	
 
 }
