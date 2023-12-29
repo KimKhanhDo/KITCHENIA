@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
     <wb-module deploy-name="KITCHENIA">
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <property name="context-root" value="KITCHENIA"/>
         <property name="java-output-path" value="/KITCHENIA/build/classes"/>
+=======
+    <wb-module deploy-name="kitchenia">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <property name="context-root" value="kitchenia"/>
+        <property name="java-output-path" value="/kitchenia/build/classes"/>
+>>>>>>> 9c4a9154c119df6a407391edb31391b3ac2d2b5d
     </wb-module>
 </project-modules>

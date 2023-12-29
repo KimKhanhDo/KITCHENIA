@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 org.eclipse.wst.jsdt.launching.JRE_CONTAINER
+=======
+org.eclipse.wst.jsdt.launching.baseBrowserLibrary
+>>>>>>> 9c4a9154c119df6a407391edb31391b3ac2d2b5d
